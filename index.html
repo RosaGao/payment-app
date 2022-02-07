@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Form</title>
+</head>
+<body>
+  <form>
+    <label for="cnumber">Card number</label>
+    <br/>
+    <input type="text" id="cnumber" name="cnumber" placeholder="Valid card number">
+    <br/>
+    <fieldset>
+      <legend>Expiration Date</legend>
+      <label>
+        Month: <input type="number" id="month" name="month" placeholder="MM">
+      </label>
+      <label>
+        Year: <input type="number" id="year" name="year" placeholder="YYYY">
+      </label>
+    </fieldset>
+    <label for="cvv">CVV</label>
+    <br/>
+    <input type="text" id="cvv" name="cvv" placeholder="Card verification value">
+    <br/>
+    <input type="submit" id="submit">
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>
+
+<!--
+  <label> "for" attribute should conrrespond to the 
+    "id" attribute of the input element, or enclose <input> with <label>
+      
+  name: used only with forms, input won't be submitted without name
+      associated with data within the element, multiple inputs can share one name
+          e.g.: three radio buttons share name = "gender", only submit on data
+                from one element when click submit
+          data are submmited in the form {name: value}, so if name is omitted,
+          the data will not be sent to the server
+  id: associated with elements in general, must be unique to each element
+
+  
+-->
